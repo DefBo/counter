@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	position: relative;
+	width: 100%;
+	height:  100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-position:  center center;
+	background-repeat: no-repeat;
+	color:  #fff;
+}
+
+.counter-text {
+	position:  absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 48px;
+	text-align: center;
+}
+
+.counter-text span {
+	font-size: 68px;
+	font-weight: 800;
+	text-shadow: 2px 2px 0 #28a745, 2px -2px 0 #28a745, -2px 2px 0 #28a745, -2px -2px 0 #28a745, 2px 0px 0 #28a745, 0px 2px 0 #28a745, -2px 0px 0 #28a745, 0px -2px 0 #28a745;
+}
+
+@media (max-width: 480px) {
+	.counter-text {
+		font-size: 32px;
+	}
+	.counter-text span {
+		font-size: 48px;
+	}
+}
